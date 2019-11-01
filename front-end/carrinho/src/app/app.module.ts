@@ -1,27 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatPaginatorModule, MatProgressSpinnerModule, MatSortModule, MatTableModule, MatDividerModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatListModule} from '@angular/material/list';
-import {MatIconModule} from '@angular/material/icon';
-import { UsuarioComponent } from './usuario/usuario.component';
-import {MatFormFieldModule, MatInputModule ,MatCardModule,MatButtonModule, MatTableModule, MatPaginatorModule, MatProgressSpinnerModule, MatSortModule} from '@angular/material';
-import { UsuarioDetailComponent } from './usuario-detail/usuario-detail.component';
-import { UsuarioListComponent } from './usuario-list/usuario-list.component';
+import { CarrinhoDetailComponent } from './carrinho-detail/carrinho-detail.component';
+import { CarrinhoListComponent } from './carrinho-list/carrinho-list.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemListComponent } from './item-list/item-list.component';
+import { ItemComponent } from './item/item.component';
+import { NotImplementedYetComponent } from './not-implemented-yet/not-implemented-yet.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
-import { HttpClientModule } from '@angular/common/http';
-import { NotImplementedYetComponent } from './not-implemented-yet/not-implemented-yet.component';
-import { ItemComponent } from './item/item.component';
-import { ItemListComponent } from './item-list/item-list.component';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
-import { CarrinhoComponent } from './carrinho/carrinho.component';
-import { CarrinhoListComponent } from './carrinho-list/carrinho-list.component';
-import { CarrinhoDetailComponent } from './carrinho-detail/carrinho-detail.component';
-import { CompraComponent } from './compra/compra.component';
+import { UsuarioDetailComponent } from './usuario-detail/usuario-detail.component';
+import { UsuarioListComponent } from './usuario-list/usuario-list.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { CarrinhoFechadoComponent } from './carrinho-fechado/carrinho-fechado.component';
 
 
 @NgModule({
@@ -36,10 +35,9 @@ import { CompraComponent } from './compra/compra.component';
     ItemComponent,
     ItemListComponent,
     ItemDetailComponent,
-    CarrinhoComponent,
     CarrinhoListComponent,
     CarrinhoDetailComponent,
-    CompraComponent
+    CarrinhoFechadoComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +55,8 @@ import { CompraComponent } from './compra/compra.component';
     MatTableModule,
     MatPaginatorModule,
     MatProgressSpinnerModule,
-    MatSortModule
+    MatSortModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
