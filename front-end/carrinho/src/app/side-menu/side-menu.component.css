@@ -6,11 +6,6 @@
     height: calc(85vh - 15vh);
 }
 
-.side-menu li{
-    height: 50px;
-    
-}
-
 .menu__link {
     font-weight: 600;
     position: relative;
@@ -31,4 +26,9 @@ a:hover {
     text-decoration: none;
     color: rgb(90, 109, 216);
     outline: none;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
 }
