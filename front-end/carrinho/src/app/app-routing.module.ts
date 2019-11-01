@@ -5,8 +5,12 @@ import { UsuarioDetailComponent } from './usuario-detail/usuario-detail.componen
 import { UsuarioListComponent } from './usuario-list/usuario-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NotImplementedYetComponent } from './not-implemented-yet/not-implemented-yet.component';
+import { ItemComponent } from './item/item.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 const routes: Routes = [
+  
   { path: 'usuario', component: UsuarioComponent },
   { path: 'usuario/:id', component: UsuarioDetailComponent },
   {
@@ -17,6 +21,13 @@ const routes: Routes = [
   { path: '',
      redirectTo: '/usuarios',
      pathMatch: 'full'
+  },
+  { path: 'item', component: ItemComponent },
+  { path: 'item/:id', component: ItemDetailComponent },
+  {
+    path: 'itens',
+    component: ItemListComponent,
+    data: { title: 'Itens' }
   },
   { path: 'in_development', component: NotImplementedYetComponent },
   { path: '**', component: PageNotFoundComponent }

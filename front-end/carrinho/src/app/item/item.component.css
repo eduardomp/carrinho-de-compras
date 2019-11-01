@@ -1,0 +1,15 @@
+.item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+  }
+  
+.item-container > * {
+    width: 100%;
+}
+
+.item-container > button {
+    width: 100%;
+    margin: 10px 0px;
+}

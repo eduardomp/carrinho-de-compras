@@ -58,7 +58,7 @@ export class UsuarioListComponent implements AfterViewInit {
       ).subscribe(data => this.data = data);
   }
 
-  novoUsuario(){
+  novo(){
     this.router.navigateByUrl('/usuario');
   }
 
