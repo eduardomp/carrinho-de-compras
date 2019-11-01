@@ -14,6 +14,14 @@ import { UsuarioListComponent } from './usuario-list/usuario-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotImplementedYetComponent } from './not-implemented-yet/not-implemented-yet.component';
+import { ItemComponent } from './item/item.component';
+import { ItemListComponent } from './item-list/item-list.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { CarrinhoListComponent } from './carrinho-list/carrinho-list.component';
+import { CarrinhoDetailComponent } from './carrinho-detail/carrinho-detail.component';
+import { CompraComponent } from './compra/compra.component';
 
 
 @NgModule({
@@ -23,7 +31,15 @@ import { HttpClientModule } from '@angular/common/http';
     UsuarioDetailComponent,
     UsuarioListComponent,
     PageNotFoundComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    NotImplementedYetComponent,
+    ItemComponent,
+    ItemListComponent,
+    ItemDetailComponent,
+    CarrinhoComponent,
+    CarrinhoListComponent,
+    CarrinhoDetailComponent,
+    CompraComponent
   ],
   imports: [
     BrowserModule,

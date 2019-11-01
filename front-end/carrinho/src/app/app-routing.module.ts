@@ -4,6 +4,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuarioDetailComponent } from './usuario-detail/usuario-detail.component';
 import { UsuarioListComponent } from './usuario-list/usuario-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NotImplementedYetComponent } from './not-implemented-yet/not-implemented-yet.component';
 
 const routes: Routes = [
   { path: 'usuario', component: UsuarioComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
      redirectTo: '/usuarios',
      pathMatch: 'full'
   },
+  { path: 'in_development', component: NotImplementedYetComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 

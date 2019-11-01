@@ -6,9 +6,6 @@ import {merge, Observable, of as observableOf} from 'rxjs';
 import {catchError, map, startWith, switchMap} from 'rxjs/operators';
 import { Router } from '@angular/router';
 
-/**
- * @title Table retrieving data through HTTP
- */
 @Component({
   selector: 'usuario-list',
   styleUrls: ['./usuario-list.component.css'],
