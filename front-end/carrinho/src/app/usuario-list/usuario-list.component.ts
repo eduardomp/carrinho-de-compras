@@ -61,6 +61,10 @@ export class UsuarioListComponent implements AfterViewInit {
   novoUsuario(){
     this.router.navigateByUrl('/usuario');
   }
+
+  selecionar(id){
+    this.router.navigateByUrl(`/usuario/${id}`);
+  }
 }
 
 export interface GithubApi {

@@ -24,11 +24,17 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: rgb(90, 109, 216);
+    color: #a797c2;
     outline: none;
 }
 
 .item-container{
     display: flex;
     align-items: center;
+    padding: 15px;
+}
+
+.item-container:hover {
+    border-left:  #a797c2 5px solid;
+    transition: 0.2s;
 }
