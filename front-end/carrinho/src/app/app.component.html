@@ -1,28 +1,22 @@
-<mat-toolbar class="top-bar">
-  <span>Carrinho de compras</span>
-</mat-toolbar>
 
+<mat-toolbar class="top-bar">
+  <!--
+<span class="fill-remaining-space"></span>
+  -->
+
+  <span class="logo">Carrinho de compras</span>
+
+</mat-toolbar>
 <mat-drawer-container class="drawer-container">
  
   <mat-drawer mode="side" opened class="drawer-content">
-    
-    <nav class="side-menu"> 
-      <div>
-       <ul> 
-         <li>Usuarios</li>
-         <li>Itens</li>
-         <li>Carrinhos</li>
-       </ul>  
-      </div>
-    </nav>   
-
+      <app-side-menu></app-side-menu>
   </mat-drawer>
   
   <mat-drawer-content class="main-content">
-  
+      <mat-card class="content-card">
+        <router-outlet></router-outlet>
+      </mat-card>
   </mat-drawer-content>
 
 </mat-drawer-container>
-
-
-<router-outlet></router-outlet>

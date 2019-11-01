@@ -9,7 +9,7 @@
 }
 
 .main-content{
-    background: #2a2b30;
+    background: #bdbdbd;
 }
 
 /*top bar*/
@@ -17,17 +17,20 @@
     background: #1c1d22;
     color: #bdbdbd;
     height: 15vh;
+    width: 100vw;
 }
 
-/*side menu*/
-.side-menu{
-    margin-top: 50px;
-    background: #1c1d22;
-    color: #bdbdbd;
-    height: calc(85vh - 15vh);
+.fill-remaining-space {
+    flex: 1 1 auto;
 }
 
-.side-menu li{
-    height: 50px;
-    
+.logo {
+    font-family: 'Audiowide', cursive;
+}
+
+.content-card{
+    width: 70%;
+    height: 50vh;
+    margin: 5% 0 0 15%;
+    padding: 50px;
 }

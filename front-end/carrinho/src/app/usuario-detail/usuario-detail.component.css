@@ -1,0 +1,15 @@
+.usuario-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+  }
+  
+.usuario-container > * {
+    width: 100%;
+}
+
+.usuario-container > button {
+    width: 100%;
+    margin: 10px 0px;
+}

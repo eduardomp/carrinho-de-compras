@@ -1,0 +1,34 @@
+/*side menu*/
+.side-menu{
+    margin-top: 50px;
+    background: #1c1d22;
+    color: #bdbdbd;
+    height: calc(85vh - 15vh);
+}
+
+.side-menu li{
+    height: 50px;
+    
+}
+
+.menu__link {
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding: 1em 2.5em 1em 1.5em;
+    color: #bdbdbd;
+    -webkit-transition: color 0.1s;
+    transition: color 0.1s;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(90, 109, 216);
+    outline: none;
+}
