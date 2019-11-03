@@ -1,5 +1,6 @@
-package model;
+package com.carrinhodecompras.api.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
@@ -19,7 +20,8 @@ import lombok.ToString;
 @Document(collection = "Usuario")
 public class Usuario {
  
-    private Integer id; 
+	@Id
+    private String id; 
     private String nome;
     private String email;
 }
