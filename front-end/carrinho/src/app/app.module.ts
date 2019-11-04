@@ -21,6 +21,8 @@ import { UsuarioDetailComponent } from './usuario-detail/usuario-detail.componen
 import { UsuarioListComponent } from './usuario-list/usuario-list.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { CarrinhoFechadoComponent } from './carrinho-fechado/carrinho-fechado.component';
+import { ServicesModule } from './services/services.module';
+import { FormsModule }   from '@angular/forms';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { CarrinhoFechadoComponent } from './carrinho-fechado/carrinho-fechado.co
     ItemDetailComponent,
     CarrinhoListComponent,
     CarrinhoDetailComponent,
-    CarrinhoFechadoComponent,
+    CarrinhoFechadoComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,9 @@ import { CarrinhoFechadoComponent } from './carrinho-fechado/carrinho-fechado.co
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSortModule,
-    MatDividerModule
+    MatDividerModule,
+    ServicesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,15 +2,14 @@
 <div class="usuario-container">
 
     <mat-form-field>
-        <input matInput placeholder="Nome">
+        <input matInput placeholder="Nome" name="nome" [(ngModel)]="nome">
     </mat-form-field>
-
-    <mat-form-field>
-            <input matInput placeholder="Email">
-    </mat-form-field>
-
     
-    <button mat-raised-button>Salvar</button>
+    <mat-form-field>
+        <input matInput placeholder="Email" name="email" [(ngModel)]="email">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="salvar()">Salvar</button>
     
     <button mat-raised-button (click)="cancelar()">Cancelar</button>
 

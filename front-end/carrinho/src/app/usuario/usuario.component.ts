@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UsuarioService } from '../services/usuario.service';
+
 
 @Component({
   selector: 'app-usuario',
@@ -8,14 +10,25 @@ import { Router } from '@angular/router';
 })
 export class UsuarioComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  nome: string;
+  email: string;
+
+  constructor(private router: Router,
+              private usuarioService: UsuarioService) { 
+
+  }
 
   ngOnInit() {
   }
 
 
   salvar(){
-
+    this.usuarioService.save({nome: this.nome, email: this.email})
+    .subscribe(
+      (data) => console.log(data),
+      (error)=> console.log(error),
+      () => this.router.navigateByUrl('/usuarios')
+    )
   }
 
   cancelar(){
