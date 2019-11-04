@@ -12,9 +12,10 @@ Para rodar o projeto siga os passos:
 
 Front end: 
 
-Acesse o diretorio carrinho-de-compras/front-end/carrinho e execute o comando abaixo
+Acesse o diretorio carrinho-de-compras/front-end/carrinho e execute os comandos abaixo
 
 ```
+npm install
 ng serve --open
 ```
 
@@ -46,3 +47,6 @@ Obs: é possivel testar a API REST utilizando a collection do  Postman publicada
 
 https://www.getpostman.com/collections/0760b6a4a39377606e58
 
+Issues do projeto:
+
+https://github.com/eduardomp/carrinho-de-compras/issues
