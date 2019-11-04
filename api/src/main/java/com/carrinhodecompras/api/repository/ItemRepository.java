@@ -6,13 +6,12 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.carrinhodecompras.api.model.Usuario;
+import com.carrinhodecompras.api.model.Item;
 
 @Repository
-public interface UsuarioRepository extends MongoRepository<Usuario, String> {
+public interface ItemRepository extends MongoRepository<Item, String> {
 	
-	@Query("{ 'email' : ?0 }")
-	Optional<Usuario> findByEmail(String email);
-
-
+	@Query("{ 'nome' : ?0 }")
+	Optional<Item> findByNome(String nome);
+	
 }
